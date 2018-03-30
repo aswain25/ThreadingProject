@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:widget="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.threadingproject.MainActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Start Threads!"
+        android:onClick="start_Threads_clicked"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Loop Worker 1"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ProgressBar android:id="@+id/progressBase1"  android:layout_width="match_parent" android:layout_height="50dp" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+            <TextView android:id="@+id/tv1" android:layout_width="match_parent" android:layout_height="50dp" android:text="0%" android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Loop Worker 2"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ProgressBar android:id="@+id/progressBase2" android:layout_width="match_parent" android:layout_height="50dp" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+            <TextView android:id="@+id/tv2" android:layout_width="match_parent" android:layout_height="50dp" android:text="0%" android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Loop Worker 3"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ProgressBar android:id="@+id/progressBase3" android:layout_width="match_parent" android:layout_height="50dp" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+            <TextView android:id="@+id/tv3" android:layout_width="match_parent" android:layout_height="50dp" android:text="0%" android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Loop Worker 4"
+            android:textSize="30sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+            <ProgressBar android:id="@+id/progressBase4" android:layout_width="match_parent" android:layout_height="50dp" style="@android:style/Widget.Holo.Light.ProgressBar.Horizontal" />
+            <TextView android:id="@+id/tv4" android:layout_width="match_parent" android:layout_height="50dp" android:text="0%" android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
